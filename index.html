@@ -12,6 +12,7 @@
       --accent:#2a6f97;
       --kkday:#8E9BAE;
       --klook:#A9B7AA;
+      --hotel:#e3b3a8;
     }
     html,body{height:100%;margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--accent)}
     .wrap{max-width:980px;margin:32px auto;padding:28px}
@@ -34,8 +35,8 @@
     .card.klook h2 {padding: 6px 10px;border-radius: 8px;margin-bottom: 8px;font-weight: bold;}
     .card.klook a.link {background: var(--klook);color: #fff;}
     .card.klook a.link:hover {background: #7b8e81;color: #fff;}
-    /* 新增：住宿欄位用kkday色統一 */
-    .card.agoda, .card.Agoda { /* 支援小寫和原始大寫 */
+    /* 住宿欄位：按鈕顏色專用 */
+    .card.agoda, .card.Agoda {
       background: var(--card);
       border-radius: 12px;
       padding: 14px;
@@ -43,7 +44,7 @@
       border: 1px solid rgba(0,0,0,0.04);
     }
     .card.agoda h2, .card.Agoda h2 {
-      background: var(--kkday);
+      background: var(--hotel);
       color: #fff;
       padding: 6px 10px;
       border-radius: 8px;
@@ -51,11 +52,11 @@
       font-weight: bold;
     }
     .card.agoda a.link, .card.Agoda a.link {
-      background: var(--kkday);
+      background: var(--hotel);
       color: #fff;
     }
     .card.agoda a.link:hover, .card.Agoda a.link:hover {
-      background: #6c7891;
+      background: #d98e8e;
       color: #fff;
     }
     .small{font-size:12px;color:#666;margin-top:10px}
@@ -74,7 +75,7 @@
     </header>
 
     <main class="grid">
-      <!-- 修改這裡，將Agoda卡片套用kkday排版顏色 -->
+      <!-- Agoda住宿卡片：按鈕顏色改為e3b3a8 -->
       <section class="card agoda">
         <h2>🌟【沖繩住宿】</h2>
         <div class="links">
