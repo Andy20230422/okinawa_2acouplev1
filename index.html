@@ -34,6 +34,30 @@
     .card.klook h2 {padding: 6px 10px;border-radius: 8px;margin-bottom: 8px;font-weight: bold;}
     .card.klook a.link {background: var(--klook);color: #fff;}
     .card.klook a.link:hover {background: #7b8e81;color: #fff;}
+    /* 新增：住宿欄位用kkday色統一 */
+    .card.agoda, .card.Agoda { /* 支援小寫和原始大寫 */
+      background: var(--card);
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 6px 18px rgba(10,10,10,0.06);
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+    .card.agoda h2, .card.Agoda h2 {
+      background: var(--kkday);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .card.agoda a.link, .card.Agoda a.link {
+      background: var(--kkday);
+      color: #fff;
+    }
+    .card.agoda a.link:hover, .card.Agoda a.link:hover {
+      background: #6c7891;
+      color: #fff;
+    }
     .small{font-size:12px;color:#666;margin-top:10px}
     footer{margin-top:18px;font-size:13px;color:#555}
     @media (max-width:420px){.wrap{padding:16px}}
@@ -50,7 +74,8 @@
     </header>
 
     <main class="grid">
-      <section class="card Agoda">
+      <!-- 修改這裡，將Agoda卡片套用kkday排版顏色 -->
+      <section class="card agoda">
         <h2>🌟【沖繩住宿】</h2>
         <div class="links">
           <a class="link" href="https://agoda.tpx.gr/Yn8JbD5M" target="_blank" rel="noopener">HOTEL RESOL TRINITY NAHA</a>
